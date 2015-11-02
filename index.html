@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+        <style type="text/css" media="all">
+            img {
+                width: 80%;
+                height: 80%;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="cat" src="cat-treats.jpg" alt="" />
+        <button id="turningbutton" >turn</button>
+    
+    <script>
+        var turnMe = function() {
+            document.querySelector('img').style.transform = "rotate(90deg)";
+        }
+        document.querySelector('#turningbutton').addEventListener('click', turnMe);
+        console.log($);
+    </script>
+    </body>
+</html>
